@@ -6,7 +6,7 @@ function App() {
 
   // Загружаем данные с backend
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/data")
+    fetch("https://density-backend-yqap.onrender.com/data")
       .then((res) => res.json())
       .then((json) => setData(json));
   }, []);
